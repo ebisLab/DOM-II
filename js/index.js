@@ -1,5 +1,5 @@
 // Your code goes here
-//mouseenter
+//mouseover nav links
 
 let linx = document.querySelectorAll('.nav-link');
 
@@ -77,3 +77,23 @@ let headerHover = document.querySelectorAll('.container h2');
     linktag.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css') //set href attribute to link
     addHead2Head.appendChild(linktag) //add new link tag to existing head tag
    
+
+    let imgHdr = document.querySelector('header img')
+    document.querySelector('header img').setAttribute('class', 'animated')
+
+    imgHdr.addEventListener('mouseenter', function(){
+
+        imgHdr.classList.add('animated', 'shake');
+
+        // if (imgHdr.classList.contains('shake')){
+        //     return imgHdr.classList.add('animated', 'shake'); 
+        // }
+
+        // return imgHdr.classList.add('animated', 'shake');
+
+        setTimeout(function(){
+        imgHdr.classList.remove('animated', 'shake');
+        }, 500);
+       
+        
+        }, false);
