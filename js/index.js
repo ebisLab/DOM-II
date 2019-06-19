@@ -68,4 +68,12 @@ let headerHover = document.querySelectorAll('.container h2');
         }, 500);
 
     }, false);
-        
+
+    //Animate image
+
+    let addHead2Head = document.querySelector('head') //select existing head tag
+    let linktag = document.createElement('link') //create a new link tag
+    linktag.setAttribute('rel', 'stylesheet') //set rel attribute to link tag
+    linktag.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css') //set href attribute to link
+    addHead2Head.appendChild(linktag) //add new link tag to existing head tag
+   
