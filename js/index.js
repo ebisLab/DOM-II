@@ -28,4 +28,16 @@ imagesChange.addEventListener('click', function(){
     if (imagesChange.src != 'img/fun.jpg'){
     imagesChange.src = 'img/fun.jpg';}
     else{
-    imagesChange.src = 'img/adventure.jpg';}});
+    imagesChange.src = 'img/adventure.jpg';}})
+    
+
+    //random colors 
+
+const bodyColor = document.querySelector('body');
+x = ['Blue', 'Green', 'Yellow', 'Orange', 'Pink'];
+
+let imgRand = x[Math.floor(Math.random() * x.length)]
+
+window.addEventListener('scroll', function(){
+    bodyColor.style.color = imgRand;
+    })
