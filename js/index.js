@@ -18,3 +18,14 @@ let firstPop = document.querySelector('.btn')
 
 firstPop.addEventListener('click', function(){
     alert ('Imma let you finish, but Beyonce had one of the best albums ever. Sorry, not sorry')})
+
+
+//image change
+
+imagesChange = document.querySelector('.img-content img')
+
+imagesChange.addEventListener('click', function(){
+    if (imagesChange.src != 'img/fun.jpg'){
+    imagesChange.src = 'img/fun.jpg';}
+    else{
+    imagesChange.src = 'img/adventure.jpg';}});
