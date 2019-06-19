@@ -58,4 +58,14 @@ let headerHover = document.querySelectorAll('.container h2');
         }, false);
     });
 
+//text increase
+    let textIncrease = document.querySelector('header p')
+    textIncrease.addEventListener('mouseover', function(e){
+        e.target.style.fontSize = 'xx-large';
+
+        setTimeout(function(){
+            e.target.style.fontSize='';
+        }, 500);
+
+    }, false);
         
