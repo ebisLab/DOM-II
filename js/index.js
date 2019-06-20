@@ -39,27 +39,6 @@ imagesChange.addEventListener('click', function(){
     imagesChange.src = 'img/adventure.jpg';
  });
 
-    // if (imagesChange.src != 'img/fun.jpg'){
-    // }
-    // else if (imagesChange.src != 'img/fun.jpg'){
-    // imagesChange.src = 'img/adventure.jpg';}
-
-
-
-
-    //double click image
-    
-    const dbimg = document.querySelector('.content-destination');
-
-// dbimg.addEventListener('click', function(){
-//     dbimg.src = "img/funbusgif.gif"
-// });
-
-// dbimg.addEventListener('dblclick', function(){
-//     dbimg.src = "img/fun-bus.jpg"
-// });
-    
-
     //random colors 
 
 const bodyColor = document.querySelector('body');
@@ -123,6 +102,7 @@ let headerHover = document.querySelectorAll('.container h2');
 
 
         //Name prompt
+
         window.addEventListener('load', function(){
             window.prompt('What is your name?');
             });
@@ -136,12 +116,6 @@ let headerHover = document.querySelectorAll('.container h2');
 
 
        // propagation part
-
-        // function propg(e){
-        //     alert('DIV 1');
-        //     event.stopPropagation()
-        // }
-
         const propg = document.querySelectorAll('a');
 
 propg.forEach(function(e){
@@ -158,3 +132,28 @@ clixNav.addEventListener('click', function(){
 })
 
 
+//hover image gallery
+    
+let hovImg = document.querySelector('.content-destination img');
+let hoverImg = document.querySelector('.content-destination img');
+
+function setNewImage(){
+    hovImg.src = 'img/beachfolks.jpg'
+}
+function setOldImage(){
+    hovImg.src = 'img/busvacay.jpg';
+}
+
+hoverImg.addEventListener('mouseover', function(){
+   setNewImage();
+
+    setTimeout(function(){
+        setOldImage()
+    }, 500);
+
+}, false);
+
+hoverImg.addEventListener('mouseout', function(){
+    hovImg.src = 'img/destination.jpg';
+ 
+ }, false);
