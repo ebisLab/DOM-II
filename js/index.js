@@ -122,5 +122,10 @@ propg.forEach(function(a){
     });
 });
 
+const clixNav = document.querySelector('.main-navigation');
+
+clixNav.addEventListener('click', function(){
+    alert('Look at me!! Im the Navigation Area')
+})
 
 
