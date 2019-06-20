@@ -24,11 +24,40 @@ firstPop.addEventListener('click', function(){
 
 imagesChange = document.querySelector('.img-content img')
 
+// imagesChange.addEventListener('dblclick', function(){
+//     if (imagesChange.src != 'img/fun.jpg'){
+//     imagesChange.src = 'img/fun.jpg';}
+//     else{
+//     imagesChange.src = 'img/adventure.jpg';}})
+
+imagesChange.addEventListener('dblclick', function(){
+    imagesChange.src = 'img/fun.jpg';
+    
+});
+
 imagesChange.addEventListener('click', function(){
-    if (imagesChange.src != 'img/fun.jpg'){
-    imagesChange.src = 'img/fun.jpg';}
-    else{
-    imagesChange.src = 'img/adventure.jpg';}})
+    imagesChange.src = 'img/adventure.jpg';
+ });
+
+    // if (imagesChange.src != 'img/fun.jpg'){
+    // }
+    // else if (imagesChange.src != 'img/fun.jpg'){
+    // imagesChange.src = 'img/adventure.jpg';}
+
+
+
+
+    //double click image
+    
+    const dbimg = document.querySelector('.content-destination');
+
+// dbimg.addEventListener('click', function(){
+//     dbimg.src = "img/funbusgif.gif"
+// });
+
+// dbimg.addEventListener('dblclick', function(){
+//     dbimg.src = "img/fun-bus.jpg"
+// });
     
 
     //random colors 
@@ -115,8 +144,8 @@ let headerHover = document.querySelectorAll('.container h2');
 
         const propg = document.querySelectorAll('a');
 
-propg.forEach(function(a){
-    a.addEventListener('click', function(event){
+propg.forEach(function(e){
+    e.addEventListener('click', function(event){
         event.preventDefault();
         event.stopPropagation();
     });

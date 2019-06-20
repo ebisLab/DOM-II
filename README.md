@@ -1,3 +1,22 @@
+## Where to find the targeted eventListeners
+
+* Browser Load
+* Nav area , Navigation links (hover)
+* Scroll page (scroll)
+* Top image bus (hover)
+* Header titles (hover)
+* First paragraph at first section (hover)
+* Second image (dbclick)
+* First button (click)
+* Copy something (right click)
+
+
+
+
+-------------------------------------------------
+## Assignment
+
+
 # DOM II - Event Exploration
 
 Fun Bus wants you to make their site more interactive. They are relying on you to provide 10 unique events to enhance their site. Explore the many events available to you by using the [MDN events reference](https://developer.mozilla.org/en-US/docs/Web/Events).
@@ -57,3 +76,5 @@ Using the 10 unique events, find ways to update the DOM in creative ways. For ex
 ## Stretch assignment
 
 * [ ] Take a look at the [stretch assignment](stretch-assignment) and follow the instructions in the read me file.
+
+
