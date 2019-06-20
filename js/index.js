@@ -113,12 +113,14 @@ let headerHover = document.querySelectorAll('.container h2');
         //     event.stopPropagation()
         // }
 
-        const preventA = document.querySelectorAll('a');
+        const propg = document.querySelectorAll('a');
 
-preventA.forEach(function(a){
+propg.forEach(function(a){
     a.addEventListener('click', function(event){
         event.preventDefault();
         event.stopPropagation();
     });
 });
+
+
 
