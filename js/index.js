@@ -85,15 +85,40 @@ let headerHover = document.querySelectorAll('.container h2');
 
         imgHdr.classList.add('animated', 'shake');
 
-        // if (imgHdr.classList.contains('shake')){
-        //     return imgHdr.classList.add('animated', 'shake'); 
-        // }
-
-        // return imgHdr.classList.add('animated', 'shake');
-
         setTimeout(function(){
         imgHdr.classList.remove('animated', 'shake');
         }, 500);
        
         
         }, false);
+
+
+        //Name prompt
+        window.addEventListener('load', function(){
+            window.prompt('What is your name?');
+            });
+
+
+            //Copy Something
+            const body = document.querySelector('body');
+            body.addEventListener('copy', function(x){
+                alert(`Oooo.... you going to jail now, copycat! `)
+            });
+
+
+       // propagation part
+
+        // function propg(e){
+        //     alert('DIV 1');
+        //     event.stopPropagation()
+        // }
+
+        const preventA = document.querySelectorAll('a');
+
+preventA.forEach(function(a){
+    a.addEventListener('click', function(event){
+        event.preventDefault();
+        event.stopPropagation();
+    });
+});
+
