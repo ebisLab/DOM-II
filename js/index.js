@@ -111,7 +111,7 @@ let headerHover = document.querySelectorAll('.container h2');
             //Copy Something
             const body = document.querySelector('body');
             body.addEventListener('copy', function(x){
-                alert(`Oooo.... you going to jail now, copycat! `)
+                alert(`Oooo.... you going to jaigit pul now, copycat! `)
             });
 
 
