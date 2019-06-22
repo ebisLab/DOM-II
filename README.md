@@ -57,7 +57,7 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 	* :white_check_mark: `mouseover`
 	* [ ] `keydown`
 	* [ ] `wheel`
-	* [ ] `drag / drop`
+	* [ ] `drag / drop`<br>
 	:white_check_mark: `load`
 	* [ ] `focus`
 	* [ ] `resize`
