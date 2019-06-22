@@ -9,7 +9,7 @@
 * Second image (dbclick)
 * First button (click)
 * Copy something (right click)
-* Last Image (hover)
+* Last Image (hover for a few seconds and then mouseout)
 
 
 
@@ -54,16 +54,16 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 ## Task 2: Create Unique Event Listeners
 
 * :white_check_mark: Using your [index.js file](js/index.js), create 10 [unique event listeners](https://developer.mozilla.org/en-US/docs/Web/Events). using your creativity to make the Fun Bus site more interactive.  Here are some unique events you could try to use: 
-	* [ :white_check_mark:] `mouseover`
+	* :white_check_mark: `mouseover`
 	* [ ] `keydown`
 	* [ ] `wheel`
 	* [ ] `drag / drop`
-	* [:white_check_mark: ] `load`
+	:white_check_mark: `load`
 	* [ ] `focus`
 	* [ ] `resize`
-	* [:white_check_mark: ] `scroll`
+	*:white_check_mark: `scroll`
 	* [ ] `select`
-	* [:white_check_mark: ] `dblclick`
+	:white_check_mark: `dblclick`
 
 Using the 10 unique events, find ways to update the DOM in creative ways. For example you could change colors, animate objects, remove objects, etc.
 
