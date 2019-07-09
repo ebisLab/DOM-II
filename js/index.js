@@ -24,12 +24,20 @@ firstPop.addEventListener('click', function(){
 
 imagesChange = document.querySelector('.img-content img')
 
-imagesChange.addEventListener('click', function(){
-    if (imagesChange.src != 'img/fun.jpg'){
-    imagesChange.src = 'img/fun.jpg';}
-    else{
-    imagesChange.src = 'img/adventure.jpg';}})
+// imagesChange.addEventListener('dblclick', function(){
+//     if (imagesChange.src != 'img/fun.jpg'){
+//     imagesChange.src = 'img/fun.jpg';}
+//     else{
+//     imagesChange.src = 'img/adventure.jpg';}})
+
+imagesChange.addEventListener('dblclick', function(){
+    imagesChange.src = 'img/fun.jpg';
     
+});
+
+imagesChange.addEventListener('click', function(){
+    imagesChange.src = 'img/adventure.jpg';
+ });
 
     //random colors 
 
@@ -85,15 +93,67 @@ let headerHover = document.querySelectorAll('.container h2');
 
         imgHdr.classList.add('animated', 'shake');
 
-        // if (imgHdr.classList.contains('shake')){
-        //     return imgHdr.classList.add('animated', 'shake'); 
-        // }
-
-        // return imgHdr.classList.add('animated', 'shake');
-
         setTimeout(function(){
         imgHdr.classList.remove('animated', 'shake');
         }, 500);
        
         
         }, false);
+
+
+        //Name prompt
+
+        window.addEventListener('load', function(){
+            window.prompt('What is your name?');
+            });
+
+
+            //Copy Something
+            const body = document.querySelector('body');
+            body.addEventListener('copy', function(x){
+                alert(`Oooo.... you going to jaigit pul now, copycat! `)
+            });
+
+
+       // propagation part
+        const propg = document.querySelectorAll('a');
+
+propg.forEach(function(e){
+    e.addEventListener('click', function(event){
+        event.preventDefault();
+        event.stopPropagation();
+    });
+});
+
+const clixNav = document.querySelector('.main-navigation');
+
+clixNav.addEventListener('click', function(){
+    alert('Look at me!! Im the Navigation Area')
+})
+
+
+//hover image gallery
+    
+let hovImg = document.querySelector('.content-destination img');
+let hoverImg = document.querySelector('.content-destination img');
+
+function setNewImage(){
+    hovImg.src = 'img/beachfolks.jpg'
+}
+function setOldImage(){
+    hovImg.src = 'img/busvacay.jpg';
+}
+
+hoverImg.addEventListener('mouseover', function(){
+   setNewImage();
+
+    setTimeout(function(){
+        setOldImage()
+    }, 500);
+
+}, false);
+
+hoverImg.addEventListener('mouseout', function(){
+    hovImg.src = 'img/destination.jpg';
+ 
+ }, false);
